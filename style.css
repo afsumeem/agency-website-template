@@ -348,6 +348,51 @@ footer{
     display: flex;
     justify-content:space-between;
 }
+.about-company-section h4{
+    color: #391400;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+
+}
+.footer-menu h5{
+    color: #EF6D58;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.footer-menu ul{
+padding-inline-start: 0;
+margin-block-start: 0;
+}
+
+.footer-menu ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #391400;
+}
+.footer-icon{
+    display: flex;
+}
+.icon{
+    position: relative;
+}
+.icon-svg{
+    position: absolute;
+    top: 0;
+}
+
+
 
 
 
