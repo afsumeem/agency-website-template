@@ -236,10 +236,11 @@ color: rgba(57, 20, 0, 0.64);
 .dream-project{
     background-color:#EF6D58;
     min-height: 300px;
-    padding: 80px;
+    margin-top: 80px;
+    padding: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 80px;
 }
 .dream-project-content{
 
@@ -278,34 +279,46 @@ color: rgba(255, 255, 255, 0.64);
 
 .dream-project-image{
     position: relative;
+     margin-bottom: 0;
+     
 }
 .oval{
    position: absolute;
    top: 120px;
-   left: 100px;
+   left: 80px;
 }
 .human{
     position: absolute;
-    top: 90px;
-    left: 190px;
+    top: 80px;
+    left: 200px;
+    background-color: rgb(245 202 70);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+}
+.human img{
+   margin-bottom: -10px;
+   
+    
+    
 }
 .rectangle{
     position: absolute;
-    top: 170px;
+    top: 210px;
     left: 20px;
     position: relative;
 }
-.path{
-    position: absolute;
-    top: 0;
-    background-color: white;
+.path1{
+   position: absolute;
+   top: 360px;
+   left: 160px;
+    
 }
-.path img{
-    height: 200px;
-    width: 200px;
+.path-2{
     position: absolute;
-    top: 0;
+   top: 105px;
+   left: 105px;
 }
+
 .rectangle-children{
     display: flex;
     position: absolute;
@@ -328,14 +341,19 @@ color: rgba(255, 255, 255, 0.64);
 position: absolute;
 top: 50px;
 left: 55px;
+
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
 }
 
 
 
 
-
 /* media query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .first-blog-section{
     width: 100%;
     display: grid;
@@ -345,6 +363,23 @@ left: 55px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+
+.dream-project{
+    display: block;
+    margin:auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.dream-project-image{
+    margin-bottom: 300px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 }
 
