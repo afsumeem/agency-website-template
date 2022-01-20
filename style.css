@@ -239,6 +239,7 @@ color: rgba(57, 20, 0, 0.64);
     padding: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
 }
 .dream-project-content{
 
@@ -275,7 +276,59 @@ color: rgba(255, 255, 255, 0.64);
     height:48px;
 }
 
+.dream-project-image{
+    position: relative;
+}
+.oval{
+   position: absolute;
+   top: 120px;
+   left: 100px;
+}
+.human{
+    position: absolute;
+    top: 90px;
+    left: 190px;
+}
+.rectangle{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    position: relative;
+}
+.path{
+    position: absolute;
+    top: 0;
+    background-color: white;
+}
+.path img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+}
+.rectangle-children{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.oval-3{
+    margin-right: 20px;
+}
+.horizontal-rectangle img{
+    margin-right: 3px;
+}
 
+.star{
+    position: absolute;
+    top: 0;
+}
+
+.man-shape{
+position: absolute;
+top: 50px;
+left: 55px;
+}
 
 
 
