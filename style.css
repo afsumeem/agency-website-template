@@ -344,7 +344,7 @@ left: 55px;
 
 }
 
-footer{
+.footer-section{
     display: flex;
     justify-content:space-between;
 }
@@ -353,6 +353,7 @@ footer{
     font-size: 24px;
     font-style: normal;
     font-weight: bold;
+    margin-top: 0;
 
 }
 .footer-menu h5{
@@ -361,7 +362,8 @@ footer{
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    margin-top: 0;
 }
 .footer-menu ul{
 padding-inline-start: 0;
@@ -384,12 +386,15 @@ margin-block-start: 0;
 .footer-icon{
     display: flex;
 }
-.icon{
+.fb-icon, .tw-icon, .insta-icon{
     position: relative;
+    margin-right: 10px;
 }
+
 .icon-svg{
     position: absolute;
-    top: 0;
+    top: 17px;
+    left: 18px;
 }
 
 
