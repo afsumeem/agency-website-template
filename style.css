@@ -397,6 +397,28 @@ margin-block-start: 0;
     left: 18px;
 }
 
+.copyright-section, .copyright-section ul{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-section ul li, p{
+    
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+text-align: right;
+
+}
+.copyright-section p{
+    color: rgba(57, 20, 0, 0.64);
+}
+.copyright-section ul li{
+list-style: none;
+    margin-left: 25px;
+    color: #391400;
+}
+
 
 
 
@@ -424,11 +446,18 @@ margin-block-start: 0;
 .dream-project-image{
     margin-bottom: 300px;
 }
-footer{
+.footer-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.copyright-section{
+display: flex;
+flex-direction: column;
+}
+.copyright-section p, ul li{
     text-align: center;
 }
 }
