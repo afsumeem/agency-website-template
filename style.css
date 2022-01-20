@@ -232,8 +232,17 @@ color: rgba(57, 20, 0, 0.64);
 }
 
 
+/* dream project banner */
+.dream-project{
+    background-color:#EF6D58;
+    min-height: 300px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.dream-project-content{
 
-
+}
 
 
 
