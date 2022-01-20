@@ -7,21 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title of the document -->
     <title>Agency</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400&display=swap" rel="stylesheet">
     <!-- link stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- navigation bar start-->
-    <header>
-        <nav>
 
+    <header class="main-header">
+        <!-- navigation bar start-->
+        <nav>
+            <!-- logo -->
+            <div class="logo">
+                <img src="./images/Polygon.png" alt="">
+                <h4>Agency</h4>
+            </div>
+
+            <!-- navigation links -->
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- contact button -->
+            <button class="contact-button">Contact</button>
         </nav>
+        <!-- navigation bar end-->
+
+        <!-- banner section start -->
+
+        <div class="banner">
+            <h1>Blog Articles</h1>
+            <p>Agency provides a full service range including technical skills,
+                <br>
+                design, business understanding.
+            </p>
+        </div>
+        <!-- banner section end -->
     </header>
-    <!-- navigation bar end-->
 
     <!-- main contents of the document start -->
-    <main>
+    <main class="main-section">
+        <!-- first blog section start -->
 
+        <section class="first-blog-section">
+
+            <!-- article -1 -->
+            <article class="first-blog-article">
+                <img src="./images/Bitmap.png" alt="">
+                <p class="category">Stories</p>
+                <h3>Performance marketing agencies specialize</h3>
+                <p class="blog-date">7 Dec, 2021</p>
+            </article>
+
+            <!-- article -2 -->
+            <article class="first-blog-article">
+                <img src="./images/Bitmap (1).png" alt="">
+                <p>Design</p>
+                <h3>Digital marketing channels</h3>
+                <p class="blog-date">23 Nov, 2021</p>
+            </article>
+
+        </section>
+        <hr class="divider">
+
+        <!-- second blog section start -->
+        <section class="second-blog-section">
+
+            <!-- article -3 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-1.png" alt="">
+                <p class="category">Stories</p>
+                <h4>Agency is a business you hire to outsource</h4>
+                <p class="blog-date">5 Nov, 2021</p>
+            </article>
+
+            <!-- article -4 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-2.png" alt="">
+                <p class="category">Design</p>
+                <h4>Outsource your digital marketing efforts</h4>
+                <p class="blog-date">29 Oct, 2021</p>
+            </article>
+
+            <!-- article -5 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-3.png" alt="">
+                <p class="category">Marketing</p>
+                <h4>Your business with a variety of digital</h4>
+                <p class="blog-date">21 Oct, 2021</p>
+            </article>
+
+            <!-- article -6 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-4.png" alt="">
+                <p class="category">Design</p>
+                <h4>Analytics to track and report on results</h4>
+                <p class="blog-date">17 Nov, 2021</p>
+            </article>
+
+            <!-- article -7 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-5.png" alt="">
+                <p class="category">Branding</p>
+                <h4>The most well known performance</h4>
+                <p class="blog-date">12 Oct, 2021</p>
+            </article>
+
+            <!-- article -8 -->
+            <article class="second-blog-article">
+                <img src="./images/blog-6.png" alt="">
+                <p class="category">Stories</p>
+                <h4>Marketing channels native advertising</h4>
+                <p class="blog-date">9 Oct, 2021</p>
+            </article>
+
+        </section>
+
+        <!-- load more button -->
+        <button class="load-more-button">Load More</button>
+
+        <!-- divider -->
+        <hr>
+
+        <section class="newsletter-section">
+            <h3>Newsletter</h3>
+            <div>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+
+        </section>
+        <hr>
     </main>
     <!-- main contents of the document end -->
 
@@ -30,6 +152,7 @@
 
     </footer>
     <!-- footer end  -->
+
 
     <!-- js file link -->
     <script src="/js/main.js"></script>

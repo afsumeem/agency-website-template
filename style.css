@@ -1,0 +1,259 @@
+/* common style */
+body{
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    background-color: #28293E;
+    width: 100%;
+    height: 75vh;
+}
+/* navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 2%;
+}
+.logo img{
+    height: 48px;
+    width: 48px;
+}
+.logo h4{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+/* navigation links */
+
+.navigation ul{
+    display: flex;
+}
+.navigation li{
+list-style: none;
+margin-right: 40px;
+padding: 0px 10px;
+
+}
+.navigation li:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight:400;
+    font-size: 16px; 
+    line-height: 32px;
+    text-align: center;
+}
+.navigation li a:hover{
+ color: black;
+}
+
+/* navigation button */
+.contact-button{
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    background-color: #28293E;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px 30px ;
+    height: 48px;
+}
+.contact-button:hover{
+    cursor: pointer;
+
+}
+
+
+/* banner */
+
+.banner{
+    text-align: center;
+    padding: 25px 0;
+    
+}
+.banner h1{
+    color:#FFFFFF;
+    font-weight: 800;
+    font-size: 72px;
+    
+}
+.banner p{
+    color: #FFFFFFA3;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+/* set bg color  */
+.main-section, footer{
+    background-color: #FDF0E9;
+    padding: 80px 135px;
+}
+
+.divider{
+   background-color: #F3D1BF;
+    
+}
+
+/* style first blog section */
+.first-blog-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    align-content: space-around;
+    padding-bottom: 80px;
+}
+.first-blog-article img{
+    width: 100%;
+    height: 336px;
+}
+.first-blog-section h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;      
+    color: #391400;
+}
+.category{
+   font-weight: 400;
+   font-style: normal;
+   font-size: 20px;
+   color: #391400;
+}
+
+.blog-date{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: rgba(57, 20, 0, 0.64);
+}
+
+
+/* style second blog section */
+.second-blog-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    align-content: space-around;
+}
+.second-blog-article{
+    padding-top: 80px;
+}
+
+.second-blog-article img{
+    width: 100%;
+    height: 225px;
+}
+
+.second-blog-section h4{
+    font-size: 24px;
+    line-height: 32px;
+    color: #391400;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+/* style learn more button */
+
+.load-more-button{
+    width :170px;
+    height:48px;
+    border: none;
+    display: block;
+    margin:auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+    border-radius: 6px;
+}
+
+/* style newsletter-section */
+.newsletter-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.newsletter-section h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: #391400;
+}
+.newsletter-section div{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 10px;
+}
+.newsletter-section div input, button{
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.newsletter-section div input{
+    border: 1px solid #F3D1BF;
+    /* width: 65%; */
+    box-sizing: border-box;
+    font-size: 16px;
+    color: rgba(57, 20, 0, 0.64);
+    padding: 18px 0 ;
+}
+.newsletter-section div button{
+    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+    /* width: 25%; */
+    border: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px 46px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  .first-blog-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+  .second-blog-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
