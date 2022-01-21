@@ -51,7 +51,10 @@ nav{
 }
 
 /* navigation links */
-   
+nav ul{
+    z-index: 1;
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -198,10 +201,10 @@ overflow: hidden;
 }
 
 .blog-date{
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-color: rgba(57, 20, 0, 0.64);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(57, 20, 0, 0.64);
 }
 
 
@@ -527,7 +530,6 @@ footer{
         padding: 0;
         display: none;
         transition: all .5s ease-in-out;
-        z-index:1; 
     }
 
     nav ul li{
@@ -557,7 +559,6 @@ footer{
     }
     nav ul.open{
         display: block;
-        z-index:1; 
         
     }
     .navigation-button.open .hamburger-icon::before {
