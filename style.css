@@ -30,10 +30,15 @@ nav{
     justify-content:space-evenly;
     align-items: center;
     padding: 10px 2%;
+    
 }
-.logo img{
-    height: 48px;
-    width: 48px;
+.logo-parent{
+position: relative;
+}
+.polygon{
+    position: absolute;
+    top: 15px;
+    left: 14px;
 }
 .logo h4{
     font-size: 24px;
@@ -51,11 +56,13 @@ nav ul{
 nav ul li{
 list-style: none;
 margin-right: 40px;
-padding: 0px 10px;
+padding: 5px 15px;
+transition: .5s;
 
 }
-nav ul li:hover{
-    background-color: aqua;
+nav ul li:hover {
+    border: 1px solid #e9887a;
+    border-radius: 3px;
     cursor: pointer;
 }
 nav ul li a{
@@ -66,9 +73,7 @@ nav ul li a{
     line-height: 32px;
     text-align: center;
 }
-nav ul li a:hover{
- color: black;
-}
+
 
 /* navigation button */
 .contact-button{
@@ -77,15 +82,18 @@ nav ul li a:hover{
     box-sizing: border-box;
     border-radius: 6px;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 900;
     text-align: center;
-    padding: 15px 30px ;
+    padding: 12px 30px ;
     height: 48px;
+    transition: 0.3s;
 }
-.contact-button:hover{
+.contact-button:hover, .load-more-button:hover, .newsletter-section div button:hover{
     cursor: pointer;
-
+    background-color: #EF6D58;
+    color: white;
+    /* color: rgb(0, 0, 0); */
 }
 /* style navigation icon */
 
@@ -147,8 +155,12 @@ nav ul li a:hover{
 /* set bg color  */
 .main-section, footer{
     background-color: #FDF0E9;
-    padding: 80px 135px;
 }
+
+.main-section{
+ padding: 80px 135px;
+}
+
 /* 
 .divider{
    background-color: #F3D1BF;
@@ -163,11 +175,24 @@ nav ul li a:hover{
     grid-column-gap: 30px;
     align-content: space-around;
     padding-bottom: 80px;
+    position: relative;
+    
+}
+.article-img{
+overflow: hidden;
 }
 .first-blog-article img{
     width: 100%;
     height: 336px;
+	transform: scale(1);
+	transition: .8s ease-in-out;
+     
 }
+
+.first-blog-article img:hover{
+   transform: scale(1.2);
+}
+
 .first-blog-section h3{
     font-style: normal;
     font-weight: 800;
@@ -203,6 +228,11 @@ color: rgba(57, 20, 0, 0.64);
 .second-blog-article img{
     width: 100%;
     height: 225px;
+    transform: scale(1);
+	transition: .8s ease-in-out;
+}
+.second-blog-article img:hover{
+   transform: scale(1.2);
 }
 
 .second-blog-section h4{
@@ -227,6 +257,13 @@ color: rgba(57, 20, 0, 0.64);
     background-color: #FFFFFF;
     box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
     border-radius: 6px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 /* style newsletter-section */
@@ -259,7 +296,14 @@ color: rgba(57, 20, 0, 0.64);
     font-size: 16px;
     color: rgba(57, 20, 0, 0.64);
     padding: 18px 0 18px 8px ;
+    transition: .3s;
 }
+
+.newsletter-section div input:focus{
+    outline: #EF6D58 !important;
+    border-color: #EF6D58;
+}
+
 .newsletter-section div button{
     box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
     border: none;
@@ -268,6 +312,7 @@ color: rgba(57, 20, 0, 0.64);
     text-align: center;
     text-transform: uppercase;
     padding: 18px 46px ;
+     transition: 0.3s;
 }
 
 
@@ -281,9 +326,7 @@ color: rgba(57, 20, 0, 0.64);
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
 }
-.dream-project-content{
 
-}
 .dream-project-content h2{
     font-weight: 800;
     font-size: 56px;
@@ -313,6 +356,11 @@ color: rgba(255, 255, 255, 0.64);
     text-transform: uppercase;
     width :170px;
     height:48px;
+    transition: .3s;
+}
+.dream-project-content button:hover{
+    color: #EF6D58;
+    cursor: pointer;
 }
 
 .dream-project-image{
@@ -382,6 +430,11 @@ left: 55px;
 
 }
 
+/* style footer section */
+footer{
+    padding: 10px 135px;
+}
+
 .footer-section{
     display: flex;
     justify-content:space-between;
@@ -411,6 +464,9 @@ left: 55px;
     list-style: none;
     margin-bottom: 10px;
 }
+.footer-menu ul li:hover{
+    cursor: pointer;
+}
 
 .footer-menu ul li a{
     text-decoration: none;
@@ -418,6 +474,9 @@ left: 55px;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
+}
+.footer-menu ul li a:hover{
+color: #EF6D58;
 }
 .footer-icon{
     display: flex;
@@ -458,22 +517,14 @@ left: 55px;
 }
 
 
+/* media query - for extra small devices */
 
-
-
-
-/* media query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 786px) {
 
     /* responsive navigation bar */
-    nav{
-        display: flex;
-        width: 100%;
-    }
     nav ul{
         display: none;
-}
-
+    }
 .navigation-button{
     display: flex;
     justify-content: center;
@@ -497,7 +548,7 @@ left: 55px;
     display: none;
 }
 
-.main-section, footer{
+.main-section{
     padding: 80px 20px ;
 }
 
@@ -544,6 +595,7 @@ left: 55px;
 display: flex;
 flex-direction: column;
 align-items:flex-start;
+margin-bottom: 30px;
 }
 
 .newsletter-section div{
@@ -563,10 +615,17 @@ align-items:flex-start;
     display: block;
     margin:auto;
     display: flex;
+     margin-top: 40px;
     flex-direction: column-reverse;
 }
 .dream-project-image{
     margin-bottom: 300px;
+}
+
+
+/* responsive footer section */
+footer{
+    padding-top: 0;
 }
 .footer-section{
     display: flex;
@@ -574,6 +633,15 @@ align-items:flex-start;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.footer-menu{
+    margin-bottom: 30px;
+}
+.footer-menu ul li{
+    margin-bottom: 5px;
+}
+.about-company-section h4{
+    margin-bottom: 50px;
 }
 .copyright-section{
     display: flex;
@@ -586,4 +654,3 @@ align-items:flex-start;
     margin: 0;
 }
 }
-
