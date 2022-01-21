@@ -49,31 +49,26 @@ position: relative;
 }
 
 /* navigation links */
+   
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+    }
 
-nav ul{
-    display: flex;
-}
-nav ul li{
-list-style: none;
-margin-right: 40px;
-padding: 5px 15px;
-transition: .5s;
+    nav ul li a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight:400;
+        border-radius: 3px;
+        font-size: 16px; 
+        padding: 15px 30px;
+        transition: .7s;
+    }
 
-}
-nav ul li:hover {
-    border: 1px solid #e9887a;
-    border-radius: 3px;
+nav ul li a:hover {
+    background-color: #EF6D58;
     cursor: pointer;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight:400;
-    font-size: 16px; 
-    line-height: 32px;
-    text-align: center;
-}
-
 
 /* navigation button */
 .contact-button{
@@ -327,7 +322,7 @@ color: rgba(57, 20, 0, 0.64);
     column-gap: 80px;
 }
 .dream-project-content{
-padding: 60px;
+    padding: 60px;
 }
 
 .dream-project-content h2{
@@ -339,11 +334,11 @@ padding: 60px;
 }
 
 .dream-project-content p{
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 32px;
-color: rgba(255, 255, 255, 0.64);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.64);
 }
 
 .dream-project-content button{
@@ -366,7 +361,7 @@ color: rgba(255, 255, 255, 0.64);
     cursor: pointer;
 }
 .image-section{
-padding-top: 60px;
+    padding-top: 60px;
 }
 .dream-project-image{
     position: relative;  
@@ -427,9 +422,9 @@ padding-top: 60px;
 }
 
 .man-shape{
-position: absolute;
-top: 50px;
-left: 55px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
 
 }
 
@@ -479,7 +474,7 @@ footer{
     line-height: 32px;
 }
 .footer-menu ul li a:hover{
-color: #EF6D58;
+    color: #EF6D58;
 }
 .footer-icon{
     display: flex;
@@ -525,48 +520,77 @@ color: #EF6D58;
 @media only screen and (max-width: 786px) {
 
     /* responsive navigation bar */
-    nav ul{
-        display: none;
+    nav{
+        position: relative;   
     }
-.navigation-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    nav ul{
+        position: absolute;
+        top: 75px;
+        width: 75%;
+        background-color: #EF6D58;
+        padding: 0;
+        display: none;
+        transition: all .5s ease-in-out;
+    }
+
+    nav ul li{
+        border-bottom: 1px solid #391400;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li a{
+        transition: .7s;
+    }
+    nav ul li:hover, nav ul li a:hover{
+        background-color: #391400;
+    }
+
+    .navigation-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 /* navigation hamburger button animation */
-.navigation-button.open .hamburger-icon {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-.navigation-button.open .hamburger-icon::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.navigation-button.open .hamburger-icon::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-}
+    .navigation-button.open .hamburger-icon {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    nav ul.open{
+        display: block;
+        
+    }
+    .navigation-button.open .hamburger-icon::before {
+        transform: rotate(45deg) translate(35px, -35px);
+
+    }
+    .navigation-button.open .hamburger-icon::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
 
 /* set display for contact button */
-.contact-button{
-    display: none;
-}
+    .contact-button{
+        display: none;
+    }
 
-.main-section{
-    padding: 80px 20px ;
-}
+    .main-section{
+        padding: 80px 20px ;
+    }
 
 /* responsive first blog section */
   .first-blog-section{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 10px;
-}
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 10px;
+    }
 
-.first-blog-article img{
-    width: 100%;
-    height: 300px;
-}
+    .first-blog-article img{
+        width: 100%;
+        height: 300px;
+    }
 
     .first-blog-section h3{
     font-size: 24px;
@@ -581,80 +605,76 @@ color: #EF6D58;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-}
+    }
 
     .second-blog-article{
         padding-top: 30px;
-}
+    }
 
-.second-blog-article img{
-    width: 100%;
-    height: 275px;
-}
-
+    .second-blog-article img{
+        width: 100%;
+        height: 275px;
+    }
 
 /* responsive newsletter section */
-.newsletter-section{
-display: flex;
-flex-direction: column;
-align-items:flex-start;
-margin-bottom: 30px;
-}
+    .newsletter-section{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-bottom: 30px;
+    }
 
-.newsletter-section div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-}
+    .newsletter-section div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
 
-.newsletter-section h3{
-    text-align: start;
-}
-
+    .newsletter-section h3{
+        text-align: start;
+    }
 
 /* responsive dream project  */
-.dream-project{
-    display: block;
-    margin:auto;
-    display: flex;
-     margin-top: 40px;
-    flex-direction: column-reverse;
-}
-.dream-project-image{
-    margin-bottom: 300px;
-}
-
-
+    .dream-project{
+        display: block;
+        margin:auto;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .dream-project-image{
+        margin-bottom: 300px;
+    }
 
 /* responsive footer section */
-footer{
-    padding-top: 0;
-}
-.footer-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.footer-menu{
-    margin-bottom: 30px;
-}
-.footer-menu ul li{
-    margin-bottom: 5px;
-}
-.about-company-section h4{
-    margin-bottom: 50px;
-}
-.copyright-section{
-    display: flex;
-    flex-direction: column;
-}
-.copyright-section p, ul li{
-    text-align: center;
-}
-.copyright-section ul li{
-    margin: 0;
-}
+    footer{
+        padding-top: 0;
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-menu{
+        margin-bottom: 30px;
+    }
+    .footer-menu ul li{
+        margin-bottom: 5px;
+    }
+    .about-company-section h4{
+        margin-bottom: 50px;
+    }
+    .copyright-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright-section p, ul li{
+        text-align: center;
+    }
+    .copyright-section ul li{
+        margin: 0;
+    }
 }
