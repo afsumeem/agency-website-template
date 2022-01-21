@@ -52,8 +52,7 @@ nav{
 
 /* navigation links */
 nav ul{
-    position: relative;
-    z-index: 10 !important; 
+    
 }
 
 nav ul li{
@@ -531,6 +530,7 @@ footer{
         padding: 0;
         display: none;
         transition: all .5s ease-in-out;
+        z-index: 10; 
     }
 
     nav ul li{
