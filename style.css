@@ -89,11 +89,12 @@ nav ul li a{
     height: 48px;
     transition: 0.3s;
 }
-.contact-button:hover, .load-more-button:hover, .newsletter-section div button:hover{
+.contact-button:hover, 
+.load-more-button:hover, 
+.newsletter-section div button:hover{
     cursor: pointer;
     background-color: #EF6D58;
     color: white;
-    /* color: rgb(0, 0, 0); */
 }
 /* style navigation icon */
 
@@ -321,10 +322,12 @@ color: rgba(57, 20, 0, 0.64);
     background-color:#EF6D58;
     min-height: 300px;
     margin-top: 80px;
-    padding: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
+}
+.dream-project-content{
+padding: 60px;
 }
 
 .dream-project-content h2{
@@ -362,11 +365,11 @@ color: rgba(255, 255, 255, 0.64);
     color: #EF6D58;
     cursor: pointer;
 }
-
+.image-section{
+padding-top: 60px;
+}
 .dream-project-image{
-    position: relative;
-     margin-bottom: 0;
-     
+    position: relative;  
 }
 .oval{
    position: absolute;
@@ -621,6 +624,7 @@ margin-bottom: 30px;
 .dream-project-image{
     margin-bottom: 300px;
 }
+
 
 
 /* responsive footer section */
