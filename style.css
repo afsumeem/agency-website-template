@@ -561,7 +561,7 @@ footer{
     }
     nav ul.open{
         display: block;
-        
+        z-index: 1;
     }
     .navigation-button.open .hamburger-icon::before {
         transform: rotate(45deg) translate(35px, -35px);
