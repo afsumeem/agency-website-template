@@ -557,6 +557,7 @@ footer{
     }
     nav ul.open{
         display: block;
+        z-index:1; 
         
     }
     .navigation-button.open .hamburger-icon::before {
