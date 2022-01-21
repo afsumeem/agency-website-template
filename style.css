@@ -52,8 +52,8 @@ nav{
 
 /* navigation links */
 nav ul{
-    z-index: 1;
     position: relative;
+    z-index: 10; 
 }
 
 nav ul li{
